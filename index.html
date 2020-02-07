@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Webmaster</title>
+    <link rel="stylesheet" href="font/css/all.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/validation.js"></script>
+</head>
+<body>
+    <header>
+        <div id="logo"><i class="fas fa-cloud"></i>CLOUDBUDGET</div>
+        <nav>
+            <label for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle"/>
+            <div class="menu">
+                <a href="#overview-section">OVERVIEW </a>
+                <a href="#features-section">FEATURES</a>
+                <a href="#technology-section">TECHNOLOGY</a>
+                <a href="#contact-section">CONTACT</a>
+                <a href="#">SIGN UP</a>
+							
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="overview-section">
+            <div class="overview-wrapper">
+                <span class="overview-section-title">CLOUDBUDGET </span>
+                <span class="overview-section-span">Cloud budget managment for everyone. Only $69.96 a Month After a 7 day Trail of Up to $4.99</span>
+                <button id="sign-in-button">SIGN UP</button>
+            </div>
+        </section>
+        <section id="features-section">
+            <div class="section-wrapper">
+                <div class="features-item">Features</div>
+                <div class="features-item">
+                    <img src="img/feature3.jpg">
+                    <div class="napis">
+                        <span class="span-title">Supports All Currencies and Card</span>
+                        <span class="span-content">
+                            We support all popular currencies and is fully customizable to add
+                        </span>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="features-item">
+                    <img src="img/feature2.jpg">
+                    <div class="napis">
+                        <span class="span-title">Manage your expenses on the go</span>
+                        <span class="span-content">
+                            You can acces your account from anywhere in the world on any device
+                        </span>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="features-item">
+                    <img src="img/feature1.jpg">
+                    <div class="napis">
+                        <span class="span-title">Supports All Currencies and Card</span>
+                        <span class="span-content">
+                            We support all popular currencies and is fully customizable to add
+                        </span>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <section id="technology-section">
+            <div class="section-wrapper">
+                <div class="technology-item">
+                    Technology
+                </div>
+                <div class="technology-item">
+                    <span class="number-technology">01</span>
+                    <i class="fas fa-cloud-download-alt"></i>
+                    <span class="title-technology">Cloud Storage</span>
+                    <span class="content-technology">Acces your account from anywhere in the world on any device</span>
+                </div>
+                <div class="technology-item">
+                    <span class="number-technology">02</span>
+                    <i class="fas fa-shield-alt"></i>
+                    <span class="title-technology">Secure</span>
+                    <span class="content-technology">All your information is stored on secure cloud servers</span>
+                </div>
+                <div class="technology-item">
+                    <span class="number-technology">03</span>
+                    <i class="far fa-file-pdf"></i>
+                    <span class="title-technology">PDF Download</span>
+                    <span class="content-technology">Download any of your reports in PDF format
+                    </span>
+                </div>
+                <div class="technology-item">
+                    <span class="number-technology">04</span>
+                    <i class="fas fa-file-csv"></i>
+                    <span class="title-technology">CSV Download</span>
+                    <span class="content-technology">All your information is stored on securs cloud servers</span>
+                </div>
+            </div>
+        </section>
+        <section id="red-section">
+            <div class="section-wrapper">
+                <div class="red-section-item">
+                    <span id="red-section-title">
+                        Stay focused on saving money
+                    </span>
+                    <span id="red-section-content">
+                        It is important to stay focused on saving money in any way you can. We help you monitor your spending habits so you can easily spot and cut any unnecessary expense. Simply join today to get started
+                    </span>
+                    <span id="red-section-icons">
+                        <i class="fab fa-google-play"></i>
+                        <i class="fab fa-app-store"></i>
+                        <i class="fab fa-windows"></i>
+                    </span>
+                </div>
+                <div class="red-section-item" id="image-item">
+                    <div id="red-section-image">
+                        <img src="img/obraz.png">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section id="contact-section">
+            <div class="section-wrapper">
+                <div class="contact-section-item">
+                    <span id="contact-section-title">
+                        Contact
+                    </span>
+                    <span id="contact-section-content">
+                        Questions or concerns? Just fil out the form below and our support team will get back to you within 24 hours
+                    </span>
+                </div>
+                <div class="contact-section-item">
+                    <form action="#" id="contact-form" name="contactform" onsubmit="return validateForm()" method="post">
+                        <ul class="form-wrapper">
+                            <li class="form-row">
+                                <input type="text" name="firstname" id="firstname-input" placeholder="First name">
+                                <div class=" error" id="firstname-error"></div>
+                                <input type="text" name="lastname" id="lastname-input" placeholder="Last name">
+                            </li>
+                            <li class="errors">
+                                <div id="first-error-box" class="error-box"></div><div id="second-error-box" class="error-box"></div>
+                            </li>
+                            <li class="form-row">
+                                <input type="text" name="phonenumber" id="phonenumber-input"
+                                placeholder="Phone number"></br>
+                            </li>
+                            <li class="errors">
+                                <div id="third-error-box" class="error-box"></div>
+                            </li>
+                            <li class="form-row">
+                                <div id="select-wrapper">
+                                    <select name="serviceselect" form="contact-form" id="select-service-form">
+                                        <option value="" disabled selected hidden>Choose Service</option>
+                                        <option value="service1">Service 1</option>
+                                        <option value="service2">Service 2</option>
+                                        <option value="service2">Service 3</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li class="errors">
+                                <div id="fourth-error-box" class="error-box"></div>
+                            </li>
+                            <li class="submit-row">
+                                <input type="submit" id="submit-form" value="SUBMIT NOW">
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
